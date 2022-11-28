@@ -43,13 +43,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DEBOUNCE 5
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
-#define LOCKING_SUPPORT_ENABLE
+// #define LOCKING_SUPPORT_ENABLE
 /* Locking resynchronize hack */
-#define LOCKING_RESYNC_ENABLE
+// #define LOCKING_RESYNC_ENABLE
 
 /* Backlight configuration
  */
 #define BACKLIGHT_LEVELS 4
+#define BACKLIGHT_DEFAULT_LEVEL 4
+#define BACKLIGHT_BREATHING TRUE
+#define BREATHING_PERIOD 6
 
 /* Underglow configuration
  */
@@ -64,10 +67,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_EFFECT_RGB_TEST
 #define RGBLIGHT_EFFECT_ALTERNATING
 #define RGBLIGHT_EFFECT_TWINKLE
-#define RGBLED_NUM 8
+#define RGBLED_NUM 17
 #define RGBLIGHT_HUE_STEP 10
 #define RGBLIGHT_SAT_STEP 17
 #define RGBLIGHT_VAL_STEP 17
+#define RGBLIGHT_LAYERS
+#define RGBLIGHT_SLEEP
 
 /*
  * Feature disable options
