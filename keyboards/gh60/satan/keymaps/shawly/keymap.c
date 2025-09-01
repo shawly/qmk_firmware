@@ -1,11 +1,13 @@
 #include QMK_KEYBOARD_H
-#include "keymap.h"
+
+#include "keymap_stuff.h"
 
 #ifdef RGBLIGHT_LAYERS
 #   include "rgblight.c"
 #endif
 
 #ifdef RAW_ENABLE
+#   include "raw_hid.h"
 #   include "rawhid.c"
 #endif
 
